@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>optimization model</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="MODELING PERFORMANCE AND EMISSION CHARACTERISTICS OF BIODIESEL FUELED ENGINE FOR OPTIMAL OPERATION WITH PYTHON">
+		<meta name="author" content="Dominic Kata">
+		<meta name="keywords" content="Engine,Fuel,Vitalis,Boyo,Simulation Model,Egerton university,Python model">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="static/images/4.gif" width="300" alt=""><br>
+					<img src="static/images/2.gif" style="padding-top: 550px" width="300" alt="">
+				</div>
+				<form action="#" method="post">
+					<h2>MODELING PERFORMANCE AND EMISSION CHARACTERISTICS OF <br>
+                    BIODIESEL FUELED ENGINE FOR OPTIMAL OPERATION WITH PYTHON</h2><br>
+					<div class="form-row">
+						<label>Speed (rpm)<input name="n" type="text" class="form-control" placeholder="482" value="{{form_fields.n}}"></label>
+						<label> Viscosity<input name="v" type="text" class="form-control" placeholder="2.7" value="{{form_fields.v}}"></label>
+						<label>Mass of Fuel (kg)<input name="m" type="text" class="form-control" placeholder="6.0" value="{{form_fields.m}}"></label>
+					</div>
+					<div class="form-row">
+						<label>Load (Kg)<input name="w" type="text" class="form-control" placeholder="2000" value="{{form_fields.w}}"></label>
+						<label>Calorific Value (Cv)<input name="cv" type="text" class="form-control" placeholder="4.2" value="{{form_fields.cv}}"></label>
+						<label>Blend Ratio (%)<input name="b" type="text" class="form-control" placeholder="11" value="{{form_fields.b}}"></label>
+					</div>
+					<h2 align="center">CONSTANTS</h2><br>
+					<div class="form-row">
+						<label>a1<input name="a1" type="text" class="form-control" placeholder="-0.0020" value="{{form_fields.a1}}"></label>
+						<label>b1<input name="b1" type="text" class="form-control" placeholder="-0.0070" value="{{form_fields.b1}}"></label>
+						<label>c1<input name="c1" type="text" class="form-control" placeholder="-0.9970" value="{{form_fields.c1}}"></label>
+					</div>
+					<div class="form-row">
+						<label>a2<input name="a2" type="text" class="form-control" placeholder="-0.0020" value="{{form_fields.a2}}"></label>
+						<label>b2<input name="b2" type="text" class="form-control" placeholder="-0.0070" value="{{form_fields.b2}}"></label>
+						<label>c2<input name="c2" type="text" class="form-control" placeholder="-0.9970" value="{{form_fields.c2}}"></label>
+					</div>
+						<div class="form-row">
+						<label>a3<input name="a3" type="text" class="form-control" placeholder="-0.0020" value="{{form_fields.a3}}"></label>
+						<label>b3<input name="b3" type="text" class="form-control" placeholder="-0.0070" value="{{form_fields.b3}}"></label>
+						<label>c3<input name="c3" type="text" class="form-control" placeholder="-0.9970" value="{{form_fields.c3}}"></label>
+					</div>
+					<div class="form-row">
+						<label>a4<input name="a4" type="text" class="form-control" placeholder="-0.0020" value="{{form_fields.a4}}"></label>
+						<label>b4<input name="b4" type="text" class="form-control" placeholder="-0.0070" value="{{form_fields.b4}}"></label>
+						<label>c4<input name="c4" type="text" class="form-control" placeholder="-0.9970" value="{{form_fields.c4}}"></label>
+					</div>
+						<button type="submit">Simulate Now
+						<!-- <i class="zmdi zmdi-long-arrow-right"></i> -->
+					</button><br>
+					<h2>MODEL OUTPUT</h2><br>
+					<div class="form-row">
+						<label>Optimized Blend Ratio (%)<input name="obr" type="text" class="form-control" placeholder="Blend Ratio"value="{{result.obr}}"></label>
+						<label>BPE (%)<input name="bte" type="text" class="form-control" placeholder="BPE (%)"value="{{result.bte}}"></label>
+						<label>BP (%)<input name="bp" type="text" class="form-control" placeholder="BP (%)" value="{{result.bp}}"></label>
+					</div>
+					<div class="form-row">
+						<label>CO Emission (%)<input name="co" type="text" class="form-control" placeholder="0.93" value="{{result.co}}"></label>
+						<label>NOx Emission (%)<input name="no" type="text" class="form-control" placeholder="1.05" value="{{result.no}}"></label>
+						<!-- <label>Message<input name="msg" type="text" class="form-control" placeholder="Waiting for output! ..." value="{{result.msg}}"></label> -->
+					</div>
+					</div>	
+				</form>	
+			</div>
+		</div>
+		<footer>
+			<h2 style="color: #fff">&copy; VITALIS KIBIWOT NGELECHEI 2020</h2>
+		</footer>
+		<script src="static/js/jquery-3.3.1.min.js"></script>
+		<script src="static/js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
